@@ -1,28 +1,24 @@
 ---
-title: A simple post
-date: '2019-06-18'
+title: Style a form
+date: 2020-06-07T16:46:07.616Z
 tags:
-  - demo-content
-  - simple-post
-  - blog
+  - CSS
 ---
-A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.
+做了一个Design Technologist的面试题。要求style一个form，给了HTML，只写CSS，不改动HTML。最终要实现的效果是这样的：
 
-How about a `<blockquote>`?
+![final form](images/contact-us-mock.png)
 
-> Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
+我写的CodePen是这样的：
 
-A list of stuff:
+<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="jimmieego" data-slug-hash="VwLVmPY" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Form style">
+  <span>See the Pen <a href="https://codepen.io/jimmieego/pen/VwLVmPY">
+  Form style</a> by Tao Zhang (<a href="https://codepen.io/jimmieego">@jimmieego</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-- Sed posuere consectetur est at lobortis
-- Aenean lacinia bibendum nulla sed consectetur
-- Sed posuere consectetur est at lobortis
-
-How about an ordered list of stuff:
-
-1. Sed posuere consectetur est at lobortis
-2. Aenean lacinia bibendum nulla sed consectetur
-3. Sed posuere consectetur est at lobortis
-
-
-Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.
+一些经验：
+- Layout用了flexbox
+- 应该要用CSS variable把颜色，spacing等先定义好，这样将来更新方便
+- 把label放到input里面要用`position: relative`
+- Custom的radio button是用CSS的shape
