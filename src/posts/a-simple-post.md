@@ -6,7 +6,7 @@ tags:
 ---
 做了一个Design Technologist的面试题。要求style一个form，给了HTML，只写CSS，不改动HTML。最终要实现的效果是这样的：
 
-![final form](images/contact-us-mock.png)
+<img src="https://i.ibb.co/HBtWWgw/contact-us-mock.png" alt="contact-us-mock" border="0">
 
 我写的CodePen是这样的：
 
